@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: sans-serif; padding: 10px; width: 220px; }
+    input, select { width: 100%; margin: 6px 0; }
+    button { margin-top: 10px; padding: 6px; width: 100%; }
+  </style>
+</head>
+<body>
+  <h3>AM32 автозаповнення</h3>
+
+  <label>
+    Чекбокс 1
+    <input type="checkbox" id="chk1" />
+  </label>
+
+  <label>
+    Опція
+    <select id="sel1">
+      <option value="UA">UA</option>
+      <option value="US">US</option>
+      <option value="EU">EU</option>
+    </select>
+  </label>
+
+  <label>
+    Значення (0–100)
+    <input type="range" id="rng1" min="0" max="100" value="50" />
+  </label>
+
+  <button id="apply">Застосувати</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>

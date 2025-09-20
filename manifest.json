@@ -1,6 +1,11 @@
-    {
-      "manifest_version": 3,
-      "name": "My First Extension",
-      "version": "1.0",
-      "description": "A simple Chrome extension."
-    }
+{
+  "manifest_version": 3,
+  "name": "AM32 Config Helper",
+  "version": "1.0",
+  "description": "Автозаповнення форми на https://am32.ca/configurator",
+  "permissions": ["scripting", "activeTab"],
+  "host_permissions": ["https://am32.ca/configurator*"],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
