@@ -1,11 +1,17 @@
 {
   "manifest_version": 3,
-  "name": "AM32 Config Helper",
+  "name": "AM32 Config AutoFill",
   "version": "1.0",
-  "description": "Автозаповнення форми на https://am32.ca/configurator",
-  "permissions": ["scripting", "activeTab"],
+  "description": "Автоматичне заповнення налаштувань на am32 configurator",
+  "permissions": ["scripting", "storage", "activeTab"],
   "host_permissions": ["https://am32.ca/configurator*"],
   "action": {
     "default_popup": "popup.html"
-  }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://am32.ca/configurator*"],
+      "js": ["content.js"]
+    }
+  ]
 }
